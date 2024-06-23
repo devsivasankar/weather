@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App | Using API</title>
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <!-- <div class="video"> -->
+        <!-- <video src="bgvideo1.mp4"  autoplay muted loop type="video/mov" class="video"></video> -->
+    <!-- </div> -->
+    <div class="container">
+       <div class="section1">
+        <div class="search">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Search City..."  id="inputbox">
+            <i class="fa-solid fa-magnifying-glass" class="magnifyingglass" id="searchbtn"></i>
+        </div>
+        <div class="icons">
+           <img src="city1.png" width="150px" height="150px">
+        </div>
+        <div class="temperature">
+            <h1 id="temperature">--</h1>
+            <h3 id="description">--</h3>
+            <hr width="300px" style="margin-left: 50px;">
+            <h3 id="city">----</h3>
+            <h5 id="country">--</h5>
+        </div>
+        <div class="date">
+            <h2 id="date">--/--/----</h2>
+        </div>
+
+       </div> 
+       <div class="section2">
+        <div class="winddetial">
+            <i class="fa-solid fa-wind" style="color: white;"></i>
+            <p>Wind</p>
+            <h3 id="wind">-- km/h</h3>
+        </div>
+        <div class="humiditydetial">
+            <i class="fa-solid fa-water" style="color: white;"></i>
+            <p>Humidity</p>
+            <h3 id="humidity">-- %</h3>
+        </div>
+        <div class="feellike">
+            <p>Feel Like</p>
+            <h3 id="feellike">--°C</h3>
+        </div>
+        <div class="maxtemp">
+            <i class="fa-solid fa-up-long" style="color: red;"></i>
+            <p>Max Temperature</p>
+            <h3 id="maxtemp">--°C</h3>
+        </div>
+        <div class="mintemp">
+            <i class="fa-solid fa-down-long" style="color: green;"></i>
+            <p>Min Temperature</p>
+            <h3 id="mintemp">--°C</h3>
+        </div>
+        <div class="pressure">
+            <p>Pressure</p>
+            <h3 id="pressure">---- mb</h3>
+        </div>
+       </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
